@@ -1,0 +1,12 @@
+[
+  {"citya": "opole", "cityb": "legnica", "distance": "157"},
+  {"citya": "Biała Podlaska", "cityb": "Skierniewice", "distance": "247"},
+  {"citya": "Siedlce", "cityb": "Skierniewice", "distance": "180"},
+  {"citya": "Suwałki", "cityb": "Przemyśl", "distance": "617"},
+  {"citya": "Piotrków Trybunalski", "cityb": "Skierniewice", "distance": "85"},
+  {"citya": "Legnica", "cityb": "Suwałki", "distance": "716"},
+  {"citya": "Wałbrzych", "cityb": "Biała Podlaska", "distance": "595"},
+  {"citya": "Opole", "cityb": "Skierniewice", "distance": "277"},
+  {"citya": "Przemyśl", "cityb": "Zielona Góra", "distance": "688"},
+  {"citya": "bialystok", "cityb": "warszawa", "distance": "164"}
+]

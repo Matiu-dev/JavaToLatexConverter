@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="/jaxb/gen"
+        xmlns:userns="/jaxb/gen"
+        elementFormDefault="qualified">
+
+<!--    <element name="userRequest" type="userns:UserRequest"></element>-->
+<!--    <element name="userResponse" type="userns:UserResponse"></element>-->
+<!--    <element name="tabela_kursow" type="userns:Pozycja"></element>-->
+
+<!--    <complexType name="UserRequest">-->
+<!--        <sequence>-->
+<!--            <element name="id" type="int" />-->
+<!--            <element name="name" type="string" />-->
+<!--        </sequence>-->
+<!--    </complexType>-->
+
+<!--    <complexType name="UserResponse">-->
+<!--        <sequence>-->
+<!--            <element name="id" type="int" />-->
+<!--            <element name="name" type="string" />-->
+<!--            <element name="gender" type="string" />-->
+<!--            <element name="created" type="dateTime" />-->
+<!--        </sequence>-->
+<!--    </complexType>-->
+
+<!--    <complexType name="Pozycja">-->
+<!--        <sequence>-->
+<!--            <element name="nazwa_waluty" type="string" />-->
+<!--            <element name="przelicznik" type="string" />-->
+<!--            <element name="kod_waluty" type="string" />-->
+<!--            <element name="kurs_sredni" type="string" />-->
+<!--        </sequence>-->
+<!--    </complexType>-->
+
+    <element name="tabela_kursow">
+        <complexType>
+            <sequence>
+                <element name="numer_tabeli"></element>
+                <element name="data_publikacji"></element>
+                <element name="pozycja" maxOccurs="unbounded" >
+                    <complexType>
+                        <sequence>
+                            <element name="nazwa_waluty" type="string" />
+                            <element name="przelicznik" type="string" />
+                            <element name="kod_waluty" type="string" />
+                            <element name="kurs_sredni" type="string" />
+                        </sequence>
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>
